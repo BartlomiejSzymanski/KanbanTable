@@ -1,0 +1,1 @@
+{'Wyprowadz psa': 'Important'}LF{'Posprzataj pokoj': 'Normal'}LF{}LF

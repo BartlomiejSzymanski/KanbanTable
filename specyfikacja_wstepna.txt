@@ -1,0 +1,28 @@
+
+Ogólny opis programu:
+Program obsługuje tablicę Kanban z trzema kolumnami zawierającymi zadania. Tablica będzie podzielona na 3 kolumny: To do, Work in progress, Done. Program ma służyć do wpisywania, zarządzania oraz usuwania zadań w poszczególnych kolumnach. Interfejs graficzny pozwala na wybieranie zadania oraz przesuwanie go z danej kolumny do kolumny po prawej stronie. Każde zadanie posiada tzw checkbox (Qt widgets), którego kliknięcie spowoduje wyświetlenie zadania jako wykonanego.  Zadaniom można przydzielać etykiety do odpowiedniego projektu.
+
+Klasy:
+	⁃	Application  - obsługuje komunikację pomiędzy użytkownikiem a programem, przesuwanie zadań, dodawanie priorytetu, sortowanie po priorytecie
+	⁃	Table - klasa typu kontener przechowująca 3 grupy- obiekty typu Column
+	⁃	Column- klasa  typu kontener, przechowuje obiekty Assignment.
+	⁃	Assignment - klasa bazowa służąca do tworzenia obiektów- zadań przez dziedziczenie
+	-       ReadWrite - klasa obsługująca zapis i odczyt - polimorficzna, bo może być do różnych formatów
+	
+Podstawowa funkcjonalność:
+-tworzenie nowego zadania z listy to do,
+-przesuwanie między kolumnami
+-usuwanie/odznaczanie zadań.
+-zapisywanie do pliku 
+-odczytywanie z pliku
+
+Zalozenia strukturalne
+-obiektowo
+-gui, model controller-presenter
+-modul testowy
+-obsluga plikow
+
+
+
+
+
